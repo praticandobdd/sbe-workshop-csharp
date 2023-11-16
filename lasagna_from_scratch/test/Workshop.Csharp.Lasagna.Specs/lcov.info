@@ -1,0 +1,51 @@
+SF:/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/WeatherForecast.cs
+FN:4,System.DateOnly Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_Date()
+FNDA:0,System.DateOnly Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_Date()
+DA:5,0
+FN:6,System.Int32 Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_TemperatureC()
+FNDA:0,System.Int32 Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_TemperatureC()
+DA:7,0
+FN:8,System.Int32 Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_TemperatureF()
+FNDA:0,System.Int32 Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_TemperatureF()
+DA:9,0
+FN:10,System.String Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_Summary()
+FNDA:0,System.String Workshop.Csharp.Lasagna.WebApi.WeatherForecast::get_Summary()
+DA:11,0
+LF:4
+LH:0
+BRF:0
+BRH:0
+FNF:4
+FNH:0
+end_of_record
+SF:/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Controllers/WeatherForecastController.cs
+FN:22,System.Collections.Generic.IEnumerable`1<Workshop.Csharp.Lasagna.WebApi.WeatherForecast> Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController::Get()
+FNDA:0,System.Collections.Generic.IEnumerable`1<Workshop.Csharp.Lasagna.WebApi.WeatherForecast> Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController::Get()
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:29,0
+DA:30,0
+DA:31,0
+FN:15,System.Void Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController::.ctor(Microsoft.Extensions.Logging.ILogger`1<Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController>)
+FNDA:0,System.Void Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController::.ctor(Microsoft.Extensions.Logging.ILogger`1<Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController>)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+FN:8,System.Void Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController::.cctor()
+FNDA:0,System.Void Workshop.Csharp.Lasagna.WebApi.Controllers.WeatherForecastController::.cctor()
+DA:9,0
+DA:10,0
+DA:11,0
+DA:12,0
+LF:17
+LH:0
+BRF:0
+BRH:0
+FNF:3
+FNH:0
+end_of_record

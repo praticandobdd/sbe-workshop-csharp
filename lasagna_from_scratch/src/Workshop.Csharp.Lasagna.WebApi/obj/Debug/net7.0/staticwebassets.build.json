@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QCQu6ZVUqP4rw+cihtf93HtGrgJOwhW7l3YEA2e5Ths=",
+  "Source": "Workshop.Csharp.Lasagna.WebApi",
+  "BasePath": "_content/Workshop.Csharp.Lasagna.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

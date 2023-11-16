@@ -1,0 +1,189 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj": {}
+  },
+  "projects": {
+    "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Workshop.Csharp.Lasagna.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Workshop.Csharp.Lasagna.WebApi.csproj",
+        "projectName": "Workshop.Csharp.Lasagna.WebApi",
+        "projectPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Workshop.Csharp.Lasagna.WebApi.csproj",
+        "packagesPath": "/Users/vinny/.nuget/packages/",
+        "outputPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/vinny/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj",
+        "projectName": "Workshop.Csharp.Lasagna.Specs",
+        "projectPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj",
+        "packagesPath": "/Users/vinny/.nuget/packages/",
+        "outputPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/vinny/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Workshop.Csharp.Lasagna.WebApi.csproj": {
+                "projectPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Workshop.Csharp.Lasagna.WebApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Exercism.Tests": {
+              "target": "Package",
+              "version": "[0.1.0-beta1, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.15.0, )"
+            },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.9.*, )"
+            },
+            "SpecFlow.xUnit": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "coverlet.msbuild": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

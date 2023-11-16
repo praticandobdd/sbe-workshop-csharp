@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8C8BC6FC-DF51-440E-940F-C687E4C77FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Csharp.Lasagna.Specs", "test\Workshop.Csharp.Lasagna.Specs\Workshop.Csharp.Lasagna.Specs.csproj", "{DD6D99D5-A826-47B1-BEC1-F5FEE1C2A9A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80B44B37-648C-42C8-B9EB-FCB2D68A2A4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workshop.Csharp.Lasagna.WebApi", "src\Workshop.Csharp.Lasagna.WebApi\Workshop.Csharp.Lasagna.WebApi.csproj", "{0DFD8E71-5234-470D-93C9-07EF72FE3C01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD6D99D5-A826-47B1-BEC1-F5FEE1C2A9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD6D99D5-A826-47B1-BEC1-F5FEE1C2A9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD6D99D5-A826-47B1-BEC1-F5FEE1C2A9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD6D99D5-A826-47B1-BEC1-F5FEE1C2A9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFD8E71-5234-470D-93C9-07EF72FE3C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFD8E71-5234-470D-93C9-07EF72FE3C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFD8E71-5234-470D-93C9-07EF72FE3C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFD8E71-5234-470D-93C9-07EF72FE3C01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DD6D99D5-A826-47B1-BEC1-F5FEE1C2A9A0} = {8C8BC6FC-DF51-440E-940F-C687E4C77FAE}
+		{0DFD8E71-5234-470D-93C9-07EF72FE3C01} = {80B44B37-648C-42C8-B9EB-FCB2D68A2A4F}
+	EndGlobalSection
+EndGlobal
