@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj": {}
+  },
+  "projects": {
+    "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj",
+        "projectName": "Workshop.Csharp.Lasagna.Specs",
+        "projectPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/Workshop.Csharp.Lasagna.Specs.csproj",
+        "packagesPath": "/Users/vinny/.nuget/packages/",
+        "outputPath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/vinny/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "SpecFlow.Plus.LivingDocPlugin": {
+              "target": "Package",
+              "version": "[3.9.*, )"
+            },
+            "SpecFlow.xUnit": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

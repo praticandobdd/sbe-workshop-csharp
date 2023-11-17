@@ -52,6 +52,12 @@
 mkdir lasagna_from_scratch
 ```
 
+```bash
+cd lasagna_from_scratch
+```
+
+* a opção `--dry-run` antecipa os resultados que o comando irá produzir
+  
 ```csharp
 dotnet new solution --name Workshop.Csharp.Lasagna --output . --dry-run
 ```
@@ -68,10 +74,22 @@ dotnet new install SpecFlow.Templates.DotNet
 dotnet new list specflowproject
 ```
 
+* a opção `-f net6.0` indica a versão do .NET que o projeto specflow será criado
+* a opção `-t xunit` indica a biblioteca de testes que será usada
+* a opção `--dry-run` antecipa os resultados que o comando irá produzir
+
 ```bash
 dotnet new specflowproject -f net6.0 -t xunit -n Workshop.Csharp.Lasagna.Specs -o test/Workshop.Csharp.Lasagna.Specs --dry-run
 ```
 
+* ver outras opções para gerar o projeto specflow
+  
+```bash
+dotnet new specflowproject -h
+```
+
+* o link abaixo será mostrado se o comando de criação do projeto for repetido com `dry-run`
+  
 ```bash
 open https://aka.ms/templating-exit-codes#73
 ```
