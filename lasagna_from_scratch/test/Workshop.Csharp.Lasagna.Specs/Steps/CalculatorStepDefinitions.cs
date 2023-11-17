@@ -36,6 +36,7 @@ namespace Workshop.Csharp.Lasagna.Specs.Steps
            // additional string/Table parameters can be defined on the step definition
            // method. 
 
+            new Workshop.Csharp.Lasagna.WebApi.WeatherForecast();
            _scenarioContext.Pending();
         }
         
