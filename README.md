@@ -1,5 +1,22 @@
 # sbe-workshop-csharp
 
+## Horário
+
+* Quartas das 19:00 às 21:00
+  
+## Cronograma
+
+* 22/11/2023
+* 29/11/2023
+* 06/12/2023
+* 13/12/2023
+* 10/01/2024
+* ...
+    
+## Acordos
+
+* ...
+
 ## Ideias
 
 * Os principais tipos de teste no desafio 1, da lasanha
