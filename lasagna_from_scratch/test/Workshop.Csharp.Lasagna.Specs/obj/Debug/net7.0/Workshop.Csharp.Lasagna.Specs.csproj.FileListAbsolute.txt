@@ -433,3 +433,4 @@
 /Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/bin/Debug/net7.0/System.Drawing.Common.dll
 /Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/bin/Debug/net7.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
 /Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
+/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/test/Workshop.Csharp.Lasagna.Specs/bin/Debug/net7.0/Workshop.Csharp.Lasagna.WebApi.xml

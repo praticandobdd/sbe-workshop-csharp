@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Workshop.Csharp.Lasagna.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Workshop.Csharp.Lasagna.WebApi.Controllers.LasagnaController">
+            <summary>
+            Lasagna challenge from Exercism.com
+            </summary>
+        </member>
+        <member name="M:Workshop.Csharp.Lasagna.WebApi.Controllers.LasagnaController.ExpectedMinutesInOven">
+            <summary>
+            summary for endpoint /times/expected
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Workshop.Csharp.Lasagna.WebApi.Controllers.LasagnaController.RemainingMinutesInOven(System.Int32)">
+            <summary>
+            summary for endpoint /times/remaining
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Workshop.Csharp.Lasagna.WebApi.Controllers.LasagnaController.PreparationTimeInMinutes(System.Int32)">
+            <summary>
+            summary for endpoint /times/preparation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Workshop.Csharp.Lasagna.WebApi.Controllers.LasagnaController.PreparationTimeInMinutes(System.Int32,System.Int32)">
+            <summary>
+            summary for endpoint /times/elapsed
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
