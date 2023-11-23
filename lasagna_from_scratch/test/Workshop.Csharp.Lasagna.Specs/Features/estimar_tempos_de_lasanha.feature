@@ -1,4 +1,5 @@
 #language: pt
+@webapi
 Funcionalidade: Estimar tempos de lasanha
 
 Regra: Defina o tempo esperado de forno em minutos
