@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TMCKz9or5v7jaT6NnBHkJCFPVm1vQSkNEu/J2XrYw1rK4cNFhRrmIjZb4inkcK9dhr/KwY8MvXEt5Co9czQGiQ==",
+  "dgSpecHash": "hsajqmmh/BBwGo1sj+uCduPXHtHQPHJfhwr6oQOtPXMDszb24AcurCNBoKoTmSSEbdV144pdMMHFLOWHpaE9Fw==",
   "success": true,
   "projectFilePath": "/Users/vinny/Desktop/github/praticandobdd/sbe-workshop-csharp/lasagna_from_scratch/src/Workshop.Csharp.Lasagna.WebApi/Workshop.Csharp.Lasagna.WebApi.csproj",
   "expectedPackageFiles": [

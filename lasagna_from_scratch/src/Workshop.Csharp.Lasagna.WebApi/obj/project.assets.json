@@ -482,7 +482,10 @@
         "net7.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://artifactory.softplan.com.br/artifactory/api/nuget/nuget-local": {},
+        "https://artifactory.softplan.com.br/artifactory/api/nuget/nuget-local-unj": {},
+        "https://artifactory.softplan.com.br/artifactory/api/nuget/nuget-local-unj": {}
       },
       "frameworks": {
         "net7.0": {
