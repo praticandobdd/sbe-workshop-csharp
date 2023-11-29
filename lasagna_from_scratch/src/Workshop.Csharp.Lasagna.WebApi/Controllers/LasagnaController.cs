@@ -7,6 +7,21 @@ namespace Workshop.Csharp.Lasagna.WebApi.Controllers;
 public class LasagnaController : ControllerBase
 {
     [HttpGet("times/expected")]
-    public async Task<ActionResult<string>> ExpectedMinutesInOven() => Ok(await Task.FromResult(new Lasagna().ExpectedMinutesInOven()));
+    public async Task<ActionResult<string>> ExpectedMinutesInOven() 
+    => Ok(await Task.FromResult(
+    new Lasagna().ExpectedMinutesInOven()
+    ));
+
+    [HttpGet("times/remaining")]
+    public async Task<ActionResult<string>> ExpectedMinutesInOven(int actualMinutes) 
+    => Ok(await Task.FromResult(
+    new Lasagna().RemainingMinutesInOven(actualMinutes)
+    ));
+
+    [HttpGet("times/elapsed")]
+    public async Task<ActionResult<string>> ExpectedMinutesInOven(int addedLayers, int minutesInOven) 
+    => Ok(await Task.FromResult(
+    new Lasagna().ElapsedTimeInMinutes(addedLayers,minutesInOven)
+    ));
 
 }

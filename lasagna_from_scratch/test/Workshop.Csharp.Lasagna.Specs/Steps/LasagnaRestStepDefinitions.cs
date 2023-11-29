@@ -28,9 +28,10 @@ public class LasagnaRestStepDefinitions
     }
 
     [Then(@"os minutos restantes no forno devem ser 15 quando já se passaram 25")]
-    public void Cenario2()
+    public async Task Cenario2()
     {
-        throw new PendingStepException();
+        var actualExpectedMinutes = await _client.GetStringAsync("/api/lasagna/times/remaining?actualMinutes=25");
+        actualExpectedMinutes.Should().Be("15");
     }
 
     [Then(@"os minutos restantes no forno devem ser 7 quando já se passaram 33")]
@@ -54,17 +55,19 @@ public class LasagnaRestStepDefinitions
     [Then(
         @"o tempo decorrido em minutos deve ser 16 quando 3 camadas são adicionadas e já se passaram 10 minutos no forno"
     )]
-    public void Cenario6()
+    public async Task Cenario6()
     {
-        throw new PendingStepException();
+        var actualExpectedMinutes = await _client.GetStringAsync("/api/lasagna/times/elapsed?addedLayers=1&minutesInOven=10");
+        actualExpectedMinutes.Should().Be("12");
     }
 
     [Then(
         @"o tempo decorrido em minutos deve ser 11 quando 2 camadas são adicionadas e já se passaram 7 minutos no forno"
     )]
-    public void Cenario7()
+    public async Task Cenario7()
     {
-        throw new PendingStepException();
+        var actualExpectedMinutes = await _client.GetStringAsync("/api/lasagna/times/elapsed?addedLayers=2&minutesInOven=7");
+        actualExpectedMinutes.Should().Be("11");
     }
 
 }
