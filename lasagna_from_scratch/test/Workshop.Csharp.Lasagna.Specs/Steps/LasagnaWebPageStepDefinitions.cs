@@ -1,10 +1,9 @@
 using TechTalk.SpecFlow;
 using FluentAssertions;
 using System.Threading.Tasks;
-using System.Net.Http;
-using Xunit;
 using Microsoft.OpenApi.Writers;
-
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace Workshop.Csharp.Lasagna.Specs.Steps;
 
@@ -55,7 +54,61 @@ public class LasagnaWebPageStepDefinitions
     )]
     public void Cenario7()
     {
-        throw new PendingStepException();
+        var pageObject = new LasagnaPageObject();
+        pageObject.InformarCamada(2);
+        pageObject.InformarMinutosNoForno(7);
+        pageObject.Submeter();
+        pageObject.TempoDecorridoDeveSer(11);
+        pageObject.Dispose();
+    }
+}
+
+class LasagnaPageObject : System.IDisposable 
+{
+    private readonly WebDriver _driver;
+    private readonly IWebElement _addedLayers,
+        _minutesInOven,
+        _lasagnaButton,
+        _takeout;
+
+    public LasagnaPageObject()
+    {
+        _driver = new ChromeDriver();
+        AcessarPagina();
+        _addedLayers = _driver.FindElement(By.Id("addedLayers"));
+        _minutesInOven = _driver.FindElement(By.Id("minutesInOven"));
+        _lasagnaButton = _driver.FindElement(By.Id("lasagna-button"));
+        _takeout = _driver.FindElement(By.Id("takeout"));
     }
 
+    public void AcessarPagina()
+    {
+        _driver.Navigate().GoToUrl("http://127.0.0.1:8080/lasagna.html");
+    }
+
+    public void InformarCamada(int camadas)
+    {
+        _addedLayers.SendKeys(camadas.ToString());
+    }
+
+    public void InformarMinutosNoForno(int minutos)
+    {
+        _minutesInOven.SendKeys(minutos.ToString());
+    }
+
+    public void Submeter()
+    {
+        _lasagnaButton.Click();
+    }
+
+    public void TempoDecorridoDeveSer(int minutos)
+    {
+        var value = _takeout.GetAttribute("value");
+        value.Should().Be(minutos.ToString());
+    }
+
+    public void Dispose()
+    {
+        _driver.Quit();
+    }
 }
