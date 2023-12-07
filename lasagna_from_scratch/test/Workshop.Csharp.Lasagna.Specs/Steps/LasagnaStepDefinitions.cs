@@ -4,6 +4,7 @@ using FluentAssertions;
 namespace Workshop.Csharp.Lasagna.Specs.Steps;
 
 [Binding]
+[Scope(Tag = "usecase")]
 public class LasagnaStepDefinitions
 {
     private readonly ScenarioContext _scenarioContext;

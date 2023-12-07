@@ -24,4 +24,10 @@ public class LasagnaController : ControllerBase
     new Lasagna().ElapsedTimeInMinutes(addedLayers,minutesInOven)
     ));
 
+    [HttpGet("times/preparation")]
+    public async Task<ActionResult<string>> PreparationTimeInMinutes(int addedLayers) 
+    => Ok(await Task.FromResult(
+    new Lasagna().PreparationTimeInMinutes(addedLayers)
+    ));
+
 }
