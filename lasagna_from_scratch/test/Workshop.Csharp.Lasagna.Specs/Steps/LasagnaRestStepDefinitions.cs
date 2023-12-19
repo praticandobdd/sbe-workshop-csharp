@@ -2,7 +2,6 @@ using TechTalk.SpecFlow;
 using FluentAssertions;
 using System.Threading.Tasks;
 using System.Net.Http;
-using Xunit;
 using Microsoft.OpenApi.Writers;
 
 
@@ -35,21 +34,24 @@ public class LasagnaRestStepDefinitions
     }
 
     [Then(@"os minutos restantes no forno devem ser 7 quando já se passaram 33")]
-    public void Cenario3()
+    public async Task Cenario3()
     {
-        throw new PendingStepException();
+        var actualExpectedMinutes = await _client.GetStringAsync("/api/lasagna/times/remaining?actualMinutes=33");
+        actualExpectedMinutes.Should().Be("7");
     }
 
     [Then(@"o tempo de preparação em minutos deve ser 2 quando 1 camada é adicionada")]
-    public void Cenario4()
+    public async Task Cenario4()
     {
-        throw new PendingStepException();
+        var actualPreparationMinutes = await _client.GetStringAsync("/api/lasagna/times/preparation?addedLayers=1");
+        actualPreparationMinutes.Should().Be("2");
     }
 
     [Then(@"o tempo de preparação em minutos deve ser 4 quando 2 camadas são adicionadas")]
-    public void Cenario5()
+    public async Task Cenario5()
     {
-        throw new PendingStepException();
+        var actualPreparationMinutes = await _client.GetStringAsync("/api/lasagna/times/preparation?addedLayers=2");
+        actualPreparationMinutes.Should().Be("4");
     }
 
     [Then(
