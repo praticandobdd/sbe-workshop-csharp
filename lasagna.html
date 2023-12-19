@@ -78,6 +78,32 @@
         .catch(err => console.error(err))
     }
 
+    function callLasagnaPreparationTime() {
+      var addedLayers = parseInt(document.getElementById("addedLayers").value);
+      fetch(
+        `${webApiUrl}/api/lasagna/times/preparation?addedLayers=${addedLayers}`)
+        .then(response => response.json())
+        .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .catch(err => console.error(err))
+    }
+
+    function callLasagnaRemainingTime() {
+      var actualMinutes = parseInt(document.getElementById("minutesInOven").value);
+      fetch(
+        `${webApiUrl}/api/lasagna/times/remaining?actualMinutes=${actualMinutes}`)
+        .then(response => response.json())
+        .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .catch(err => console.error(err))
+    }
+
+    function callLasagnaExpectedTime() {
+      fetch(
+        `${webApiUrl}/api/lasagna/times/expected`)
+        .then(response => response.json())
+        .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .catch(err => console.error(err))
+    }
+
   </script>
 </head>
 
@@ -158,6 +184,9 @@
       </div>
       <div>
         <button id="lasagna-button" type="submit" class="btn  btn-primary" onclick="callLasagna(); return false;"><i class="bi-plus-circle"></i> Calculate</button>
+        <button id="lasagna-preparation-time-button" type="submit" class="btn" onclick="callLasagnaPreparationTime(); return false;"><i class="bi-plus-circle"></i> Calculate Preparation Time</button>
+        <button id="lasagna-remaining-time-button" type="submit" class="btn" onclick="callLasagnaRemainingTime(); return false;"><i class="bi-plus-circle"></i> Calculate Remaining Time</button>
+        <button id="lasagna-expected-time-button" type="submit" class="btn" onclick="callLasagnaExpectedTime(); return false;"><i class="bi-plus-circle"></i> Calculate Expected Time</button>
         <button id="reset-lasagna-button" type="submit" class="btn" onclick="reset(); return false;"><i
           class="bi-x-circle" style="color:red"></i> Reset</button>
       </div>
