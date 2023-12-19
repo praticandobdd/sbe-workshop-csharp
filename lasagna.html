@@ -68,7 +68,7 @@
         .catch(err => console.error(err))
     }
 
-    function callLasagna() {
+    function callLasagnaElapsedTime() {
       var addedLayers = parseInt(document.getElementById("addedLayers").value);
       var minutesInOven = parseInt(document.getElementById("minutesInOven").value);
       fetch(
@@ -187,7 +187,7 @@
         </div>
       </div>
       <div>
-        <button id="lasagna-button" type="submit" class="btn  btn-primary" onclick="callLasagna(); return false;"><i class="bi-plus-circle"></i> Calculate</button>
+        <button id="lasagna-button" type="submit" class="btn " onclick="callLasagnaElapsedTime(); return false;"><i class="bi-plus-circle"></i> Calculate Elapsed Time</button>
         <button id="lasagna-preparation-time-button" type="submit" class="btn" onclick="callLasagnaPreparationTime(); return false;"><i class="bi-plus-circle"></i> Calculate Preparation Time</button>
         <button id="lasagna-remaining-time-button" type="submit" class="btn" onclick="callLasagnaRemainingTime(); return false;"><i class="bi-plus-circle"></i> Calculate Remaining Time</button>
         <button id="lasagna-expected-time-button" type="submit" class="btn" onclick="callLasagnaExpectedTime(); return false;"><i class="bi-plus-circle"></i> Calculate Expected Time</button>
