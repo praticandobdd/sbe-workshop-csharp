@@ -75,6 +75,7 @@
         `${webApiUrl}/api/lasagna/times/elapsed?addedLayers=${addedLayers}&minutesInOven=${minutesInOven}`)
         .then(response => response.json())
         .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .then(json => document.getElementById("lblTakeout").innerHTML = "Elapsed Time (in minutes)")
         .catch(err => console.error(err))
     }
 
@@ -84,6 +85,7 @@
         `${webApiUrl}/api/lasagna/times/preparation?addedLayers=${addedLayers}`)
         .then(response => response.json())
         .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .then(json => document.getElementById("lblTakeout").innerHTML = "Preparation Time (in minutes)")
         .catch(err => console.error(err))
     }
 
@@ -93,6 +95,7 @@
         `${webApiUrl}/api/lasagna/times/remaining?actualMinutes=${actualMinutes}`)
         .then(response => response.json())
         .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .then(json => document.getElementById("lblTakeout").innerHTML = "Remaining Time (in minutes)")
         .catch(err => console.error(err))
     }
 
@@ -101,6 +104,7 @@
         `${webApiUrl}/api/lasagna/times/expected`)
         .then(response => response.json())
         .then(json => document.getElementById("takeout").value = JSON.stringify(json))
+        .then(json => document.getElementById("lblTakeout").innerHTML = "Expected Time (in minutes)")
         .catch(err => console.error(err))
     }
 
@@ -192,7 +196,7 @@
       </div>
       <hr />
       <div class="form-group row">
-        <label for="takeout" class="col-sm-6 col-form-label">Take the lasagna out of the oven in (minutes)</label>
+        <label id="lblTakeout" for="takeout" class="col-sm-6 col-form-label">Take the lasagna out of the oven in (minutes)</label>
         <div class="col-sm-6">
           <input type="text" class="form-control form-control-lg" id="takeout"  readonly />
         </div>
